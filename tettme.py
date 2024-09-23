@@ -7,26 +7,17 @@ import datetime
 from time import strftime
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-ADMIN_ID = 5568951216  # Admin ID t.me dan olish kerak
+ADMIN_ID = "your ID"  # Admin ID t.me dan olish kerak
 
-bot = telebot.TeleBot("7260956364:AAG9Fz-CL2ftgjlcNdeJASAE-6jQK0bnCV8")  # Bot tokeningizni shu yerga joylashtiring
+bot = telebot.TeleBot("Bot Token")  # Bot tokeningizni shu yerga joylashtiring
 
-# # Asosiy tugmalar
-# keyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-# keyboard.row("Photo", "Video")
-# keyboard.row("Audio", "Text")
-# keyboard.row("Document")
-
-# # Text ichidagi tugmalar
-# keyboard1 = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-# keyboard1.row("Basic listening", "Developing listening")
-# keyboard1.row("Expanding Listening", "Basic IELTS listening")
-# keyboard1.row("Bosh Menu")
+# Asosiy tugmalar
 keyboard = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard.row("Photo 📷", "Video 🎥")
 keyboard.row("Audio 🎧", "Text 📝")
 keyboard.row("Document 📂")
 
+# Text ichidagi tugmalar
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard1.row("Basic listening 📚", "Developing listening 📚")
 keyboard1.row("Expanding Listening 📚", "Basic IELTS listening 📚")
